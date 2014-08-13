@@ -1,6 +1,15 @@
 "PATHOGEN
 execute pathogen#infect()
 
+"=bundle ctrlpvim/ctrlp.vim
+"=bundle scrooloose/syntastic
+"=bundle scrooloose/nerdtree
+"=bundle godlygeek/tabular
+"=bundle terryma/vim-multiple-cursors
+"=bundle tpope/vim-rails
+"=bundle t9md/vim-ruby-xmpfilter
+"=bundle airblade/vim-gitgutter
+
 "Want a different map leader than \
 let mapleader = ","
 
