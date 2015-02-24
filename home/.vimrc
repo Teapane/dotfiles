@@ -10,6 +10,12 @@ call vundle#begin()
 " let Vundle manage Vundle. Required!
 Bundle 'gmarik/Vundle.vim'
 
+" Plugins/Packages
+plugin 'scrooloose/nerdtree'
+
+call vundle#end() " required by Vundle
+filetype plugin indent on " required by Vundle
+
 " Make backspace behave in a sane manner.
 set backspace=indent,eol,start
 
