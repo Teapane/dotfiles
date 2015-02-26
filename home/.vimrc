@@ -12,8 +12,16 @@ Bundle 'gmarik/Vundle.vim'
 
 " Plugins/Packages
 Plugin 'scrooloose/nerdtree'
+
+" Syntax highlighting
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'slim-template/vim-slim'
+Plugin 'tpope/vim-rails'
+Plugin 'pangloss/vim-javascript'
+
+" Clojure Syntax highlighting, repl, etc
+Plugin 'tpope/vim-fireplace'
+Plugin 'kien/rainbow_parentheses.vim'
 
 call vundle#end() " required by Vundle
 filetype plugin indent on " required by Vundle
