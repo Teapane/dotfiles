@@ -21,6 +21,20 @@ filetype plugin indent on " required by Vundle
 " Make backspace behave in a sane manner.
 set backspace=indent,eol,start
 
+" Set tabs to 2 spaces
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+
+"handle .un~ and .swp~ files
+set backupdir=/private/tmp
+set directory=/private/tmp
+set undodir=/private/tmp
+
+" Highlight search results
+set hlsearch
+
 " Switch syntax highlighting on.
 syntax on
 
@@ -46,6 +60,7 @@ nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 " Line numbers
 set number
 
+" kill all the whitespace
 function! TrimWhiteSpace()
   %s/\s\+$//e
 endfunction
