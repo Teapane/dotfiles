@@ -1,7 +1,5 @@
-This is a repo to hold all my dotfiles.  
+Config files
 
-
-Shout outs to @thewatts and @zph
 
 
 
