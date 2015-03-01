@@ -49,8 +49,7 @@ syntax on
 " Enable file type detection and do language-dependent indenting.
 filetype plugin indent on
 
-
-" Map some stuff
+" Map all the things
 
 let mapleader = ','
 
@@ -80,5 +79,3 @@ endfunction
 
 " Strip trailing whitespace when saving
 autocmd BufWritePre * call Save()
-
- " vim-fireplace. vim-clojure-static. rainbow_parentheses.vim, paredit.vim add these for clojure
