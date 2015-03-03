@@ -79,3 +79,5 @@ endfunction
 
 " Strip trailing whitespace when saving
 autocmd BufWritePre * call Save()
+
+" git config --global core.editor /usr/bin/vim when git isn't behaving

@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/tlong/source/m.apartmentguide/app/assets/stylesheets/components'
+let g:netrw_dirhist_2='/Users/tlong/source/rentals/app'
+let g:netrw_dirhist_3='/Users/tlong/source/rentals/app/models'
+let g:netrw_dirhist_4='/Users/tlong/source/ag/app'
+let g:netrw_dirhist_5='/Users/tlong/source/ag/app/models'
+let g:netrw_dirhist_6='/Users/tlong/source/dotfiles/home/.vim/bundle'
+let g:netrw_dirhist_7='/Users/tlong/source/ag/app'
+let g:netrw_dirhist_8='/Users/tlong/source/ag/app/assets/javascripts/components/ui'
