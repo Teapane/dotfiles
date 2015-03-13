@@ -18,6 +18,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'slim-template/vim-slim'
 Plugin 'tpope/vim-rails'
 Plugin 'pangloss/vim-javascript'
+Plugin 'kien/ctrlp.vim'
 
 " Clojure Syntax highlighting, repl, etc
 Plugin 'tpope/vim-fireplace'
