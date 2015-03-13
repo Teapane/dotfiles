@@ -11,12 +11,10 @@ call vundle#begin()
 Bundle 'gmarik/Vundle.vim'
 
 " Plugins/Packages
-
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 
 " Syntax highlighting
-
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'slim-template/vim-slim'
 Plugin 'tpope/vim-rails'
@@ -53,7 +51,6 @@ syntax on
 filetype plugin indent on
 
 " Map all the things
-
 let mapleader = ','
 
 imap jj <Esc>
