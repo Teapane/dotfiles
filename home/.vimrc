@@ -13,6 +13,7 @@ Bundle 'gmarik/Vundle.vim'
 " Plugins/Packages
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-fugitive'
 
 " Syntax highlighting
 Plugin 'kchmck/vim-coffee-script'
