@@ -21,6 +21,7 @@ Plugin 'slim-template/vim-slim'
 Plugin 'tpope/vim-rails'
 Plugin 'pangloss/vim-javascript'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'scrooloose/syntastic'
 
 " Clojure Syntax highlighting, repl, etc
 Plugin 'tpope/vim-fireplace'
