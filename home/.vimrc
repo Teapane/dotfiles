@@ -92,5 +92,6 @@ endfunction
 autocmd BufWritePre * call Save()
 
 " :W when I meant :w
- cnoreabbrev <expr> W getcmdtype()==':'&&getcmdline()=~#'^W'?'w':'W'
+cnoreabbrev <expr> W getcmdtype()==':'&&getcmdline()=~#'^W'?'w':'W'
+ 
 " git config --global core.editor /usr/bin/vim when git isn't behaving
