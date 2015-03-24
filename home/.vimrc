@@ -14,6 +14,7 @@ Bundle 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'thoughtbot/vim-rspec'
 
 " Syntax highlighting
 Plugin 'kchmck/vim-coffee-script'
@@ -60,6 +61,12 @@ imap jj <Esc>
 imap kj <Esc>
 imap jk <Esc>
 map <Space> :
+
+" map vim-rspec shortcuts
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
 
 " Grab lines/blocks of lines and move them
 noremap <C-j> :m .+1<CR>==
