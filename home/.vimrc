@@ -27,6 +27,7 @@ Plugin 'scrooloose/syntastic'
 " Clojure Syntax highlighting, repl, etc
 Plugin 'tpope/vim-fireplace'
 Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'tpope/vim-leiningen'
 
 call vundle#end() " required by Vundle
 filetype plugin indent on " required by Vundle
@@ -39,7 +40,7 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-
+set ruler
 "handle .un~ and .swp~ files
 set backupdir=/private/tmp
 set directory=/private/tmp
@@ -100,5 +101,5 @@ autocmd BufWritePre * call Save()
 
 " :W when I meant :w
 cnoreabbrev <expr> W getcmdtype()==':'&&getcmdline()=~#'^W'?'w':'W'
- 
+
 " git config --global core.editor /usr/bin/vim when git isn't behaving
