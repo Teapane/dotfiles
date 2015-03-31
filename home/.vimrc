@@ -28,6 +28,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fireplace'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'tpope/vim-leiningen'
+Plugin 'guns/vim-clojure-static'
 
 call vundle#end() " required by Vundle
 filetype plugin indent on " required by Vundle
