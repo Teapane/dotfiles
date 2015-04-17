@@ -101,7 +101,6 @@ endfunction
 " Strip trailing whitespace when saving
 autocmd BufWritePre * call Save()
 
-" :W when I meant :w
+":W when I meant :w
 cnoreabbrev <expr> W getcmdtype()==':'&&getcmdline()=~#'^W'?'w':'W'
 
-" git config --global core.editor /usr/bin/vim when git isn't behaving
