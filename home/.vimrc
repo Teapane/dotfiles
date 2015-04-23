@@ -1,4 +1,3 @@
-" Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
@@ -103,4 +102,3 @@ autocmd BufWritePre * call Save()
 
 ":W when I meant :w
 cnoreabbrev <expr> W getcmdtype()==':'&&getcmdline()=~#'^W'?'w':'W'
-
