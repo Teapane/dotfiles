@@ -14,6 +14,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'thoughtbot/vim-rspec'
+" Bundle 'tpope/vim-commentary'
 
 " Syntax highlighting
 Plugin 'kchmck/vim-coffee-script'
@@ -49,6 +50,9 @@ set undodir=/private/tmp
 
 " Highlight search results
 set hlsearch
+
+" show matching bracket
+ set showmatch
 
 " Switch syntax highlighting on.
 syntax on
