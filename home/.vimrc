@@ -13,6 +13,7 @@ Bundle 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-dotenv'
 Plugin 'thoughtbot/vim-rspec'
 " Bundle 'tpope/vim-commentary'
 
