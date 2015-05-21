@@ -44,7 +44,8 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 set ruler
-"handle .un~ and .swp~ files
+
+" handle .un~ and .swp~ files
 set backupdir=/private/tmp
 set directory=/private/tmp
 set undodir=/private/tmp
@@ -105,5 +106,5 @@ endfunction
 " Strip trailing whitespace when saving
 autocmd BufWritePre * call Save()
 
-":W when I meant :w
+" :W when I meant :w
 cnoreabbrev <expr> W getcmdtype()==':'&&getcmdline()=~#'^W'?'w':'W'
