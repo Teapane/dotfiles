@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/usr'
+let g:netrw_dirhist_2='/usr/local/etc'
+let g:netrw_dirhist_3='/Users/tlong/source/rentpath_models/lib/rentpath_models/room_range'
+let g:netrw_dirhist_4='/Users/tlong/source/rentpath_models'
+let g:netrw_dirhist_5='/Users/tlong/source/rentals_models'
+let g:netrw_dirhist_6='/Users/tlong/source/rentpath_models'
+let g:netrw_dirhist_7='/usr/local/etc/nginx'

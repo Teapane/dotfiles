@@ -15,6 +15,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-dotenv'
 Plugin 'thoughtbot/vim-rspec'
+Plugin 'rking/ag.vim'
 " Bundle 'tpope/vim-commentary'
 
 " Syntax highlighting
