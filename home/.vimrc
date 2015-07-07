@@ -109,3 +109,12 @@ autocmd BufWritePre * call Save()
 
 " :W when I meant :w
 cnoreabbrev <expr> W getcmdtype()==':'&&getcmdline()=~#'^W'?'w':'W'
+
+" CtrlP
+ let g:ctrlp_custom_ignore = '\vcoverage\/'
+
+ " The Silver Searcher
+ if executable('ag')
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+  let g:ctrlp_use_caching = 0 " ag is fast; we don't need to cache
+endif
