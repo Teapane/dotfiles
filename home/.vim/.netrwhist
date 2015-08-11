@@ -1,1 +1,8 @@
-
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/tlong/source/rentals/app/assets/javascripts'
+let g:netrw_dirhist_2='/Users/tlong/source/rentals/vendor/ruby/2.1.0/gems/leads_ui-0.4.1'
+let g:netrw_dirhist_3='/Users/tlong/source/rentals/.git/hooks'
+let g:netrw_dirhist_4='/bin'
+let g:netrw_dirhist_5='/Users/tlong/source/rentals/.git/hooks'
+let g:netrw_dirhist_6='/bin'

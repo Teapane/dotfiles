@@ -16,7 +16,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-dotenv'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'rking/ag.vim'
-" Bundle 'tpope/vim-commentary'
+Plugin 'tpope/vim-commentary'
 
 " Syntax highlighting
 Plugin 'kchmck/vim-coffee-script'
@@ -26,6 +26,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'scrooloose/syntastic'
 Plugin 'suan/vim-instant-markdown'
+Plugin 'fatih/vim-go'
 
 " Clojure Syntax highlighting, repl, etc
 Plugin 'tpope/vim-fireplace'
