@@ -31,7 +31,6 @@ Plugin 'fatih/vim-go'
 " Clojure Syntax highlighting, repl, etc
 Plugin 'tpope/vim-fireplace'
 Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'tpope/vim-leiningen'
 Plugin 'guns/vim-clojure-static'
 Plugin 'guns/vim-clojure-highlight'
 
