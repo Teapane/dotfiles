@@ -119,3 +119,10 @@ cnoreabbrev <expr> W getcmdtype()==':'&&getcmdline()=~#'^W'?'w':'W'
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
   let g:ctrlp_use_caching = 0 " ag is fast; we don't need to cache
 endif
+
+
+" Autocomplete with dictionary words when spell check is on
+ set complete+=kspell
+
+" Always use vertical diffs
+ set diffopt+=vertical
