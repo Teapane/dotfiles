@@ -39,7 +39,6 @@ filetype plugin indent on " required by Vundle
 
 " Make backspace behave in a sane manner.
 set backspace=indent,eol,start
-
 " Set tabs to 2 spaces
 set tabstop=2
 set shiftwidth=2
@@ -94,6 +93,10 @@ nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 
 " Line numbers
 set number
+
+" Makes the down key no longer jump over wrapped lines
+nnoremap j gj
+nnoremap k gk
 
 " kill all the whitespace
 function! TrimWhiteSpace()
