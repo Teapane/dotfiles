@@ -26,3 +26,7 @@ alias glog='git log --graph --abbrev-commit --decorate --date=relative --format=
 alias git clean="git branch --merged dev | grep -v "\* dev" | xargs -n 1 git branch -d"
 
 alias ms="mix phoenix.server"
+alias mt="mix test"
+#Sometimes erlang binaries hang around, so remove them and recompile
+alias mdc=" rm -rf _build; mix do deps.get, compile"
+
