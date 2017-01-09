@@ -1,9 +1,10 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
-filetype off " required for Vundle
+filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
+
 call vundle#begin()
 
 " let Vundle manage Vundle. Required!
@@ -115,14 +116,15 @@ autocmd BufWritePre * call Save()
 cnoreabbrev <expr> W getcmdtype()==':'&&getcmdline()=~#'^W'?'w':'W'
 
 " CtrlP
- let g:ctrlp_custom_ignore = '\vcoverage\/'
+let g:ctrlp_custom_ignore = '\vcoverage\/'
+"unlet g:ctrlp_user_command
+"let g:ctrlp_user_command = [ '.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard' ]
 
  " The Silver Searcher
- if executable('ag')
+if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
   let g:ctrlp_use_caching = 0 " ag is fast; we don't need to cache
 endif
-
 
 " Autocomplete with dictionary words when spell check is on
  set complete+=kspell
