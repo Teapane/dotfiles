@@ -28,15 +28,21 @@ Plugin 'elixir-lang/vim-elixir'
 Plugin 'scrooloose/syntastic'
 Plugin 'suan/vim-instant-markdown'
 Plugin 'fatih/vim-go'
+Plugin 'prettier/vim-prettier'
 
 " Clojure Syntax highlighting, repl, etc
 Plugin 'tpope/vim-fireplace'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'guns/vim-clojure-static'
 Plugin 'guns/vim-clojure-highlight'
+Plugin 'mxw/vim-jsx'
+Plugin 'Valloric/MatchTagAlways'
 
 call vundle#end() " required by Vundle
 filetype plugin indent on " required by Vundle
+
+let g:NERDTreeDirArrowExpandable = '+'
+let g:NERDTreeDirArrowCollapsible = '~'
 
 " Make backspace behave in a sane manner.
 set backspace=indent,eol,start
@@ -56,13 +62,19 @@ set undodir=/private/tmp
 set hlsearch
 
 " show matching bracket
- set showmatch
+set showmatch
 
 " Switch syntax highlighting on.
 syntax on
 
+"PRETTIER NEEDS BABYLON
+let g:prettier#config#parser = 'babylon'
+
 " Enable file type detection and do language-dependent indenting.
 filetype plugin indent on
+"
+" NERDTree arrows
+" let g:NERDTreeDirArrowExpandable = '🎑'
 
 " Map all the things
 let mapleader = ','
@@ -126,8 +138,12 @@ if executable('ag')
   let g:ctrlp_use_caching = 0 " ag is fast; we don't need to cache
 endif
 
+
 " Autocomplete with dictionary words when spell check is on
  set complete+=kspell
 
 " Always use vertical diffs
  set diffopt+=vertical
+
+ " don't barf on react
+let g:jsx_ext_required = 0
