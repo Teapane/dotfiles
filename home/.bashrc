@@ -9,7 +9,7 @@
 
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
-chruby ruby-2.5.0
+chruby ruby-2.5.3
 
 #Git aliases
 alias gs="git status"
@@ -21,6 +21,7 @@ alias gb="git branch"
 alias gss="git stash"
 alias gsp="git stash pop"
 alias glog='git log --graph --abbrev-commit --decorate --date=relative --format=format:"%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)" --all'
+alias gupdate="git stash; git checkout master; git pull --rebase origin master; git checkout -; git merge master"
 
 #dev = 'master' in this case; to ignore master and delete what is merged into current HEAD
 # git branch --merged | grep -v "\*" | xargs -n 1 git branch -d

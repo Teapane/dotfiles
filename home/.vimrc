@@ -72,7 +72,7 @@ let g:prettier#config#parser = 'babylon'
 
 " Enable file type detection and do language-dependent indenting.
 filetype plugin indent on
-"
+
 " NERDTree arrows
 " let g:NERDTreeDirArrowExpandable = '🎑'
 
@@ -100,6 +100,9 @@ vnoremap <C-k> :m '<-2<CR>gv=gv
 
 " NerdTreeToggle
 nnoremap <leader>n :NERDTreeToggle<CR>
+
+" Dotfiles!
+let NERDTreeShowHidden=1
 
 " Open vimrc in buffer to edit
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
@@ -132,7 +135,7 @@ let g:ctrlp_custom_ignore = '\vcoverage\/'
 "unlet g:ctrlp_user_command
 "let g:ctrlp_user_command = [ '.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard' ]
 
- " The Silver Searcher
+" The Silver Searcher
 if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
   let g:ctrlp_use_caching = 0 " ag is fast; we don't need to cache
@@ -140,10 +143,11 @@ endif
 
 
 " Autocomplete with dictionary words when spell check is on
- set complete+=kspell
+set complete+=kspell
 
 " Always use vertical diffs
- set diffopt+=vertical
+set diffopt+=vertical
 
- " don't barf on react
+" don't barf on react
 let g:jsx_ext_required = 0
+
