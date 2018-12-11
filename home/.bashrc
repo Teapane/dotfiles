@@ -27,13 +27,15 @@ alias gupdate="git stash; git checkout master; git pull --rebase origin master; 
 # git branch --merged | grep -v "\*" | xargs -n 1 git branch -d
 # can print branches before deleting `xargs -n 1 echo git branch`
 alias git clean="git branch --merged dev | grep -v "\* master" | xargs -n 1 git branch -D"
-# alias webservice= "cd ~/source/trelora/components/web/trelora_api"
-# alias tre= "cd ~/source/trelora/components/web/mytx"
 
 alias ms="mix phoenix.server"
 # alias mt="mix test"
 #Sometimes erlang binaries hang around, so remove them and recompile
 alias mdc=" rm -rf _build; mix do deps.get, compile"
+
+# Run these when you can ping github, visit github, but host won't resolve on Github in term.
+# git config --global --unset http.proxy
+# git config --global --unset https.proxy
 
 
 export NVM_DIR="$HOME/.nvm"
