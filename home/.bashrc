@@ -1,9 +1,3 @@
-# eval "$(direnv hook bash)"
-# export PATH=/usr/local/sbin:~/bin:~/go/bin:$PATH
-
-# export PATH="$HOME/.exenv/bin:$PATH"
-# eval "$(exenv init -)"
-
 # export GOROOT=$(go env GOROOT)
 # export GOPATH=$HOME/go
 
@@ -36,7 +30,6 @@ alias mdc=" rm -rf _build; mix do deps.get, compile"
 # Run these when you can ping github, visit github, but host won't resolve on Github in term.
 # git config --global --unset http.proxy
 # git config --global --unset https.proxy
-
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
