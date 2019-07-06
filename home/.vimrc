@@ -1,3 +1,4 @@
+
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
@@ -20,15 +21,15 @@ Plugin 'rking/ag.vim'
 Plugin 'tpope/vim-commentary'
 
 " Syntax highlighting
-Plugin 'kchmck/vim-coffee-script'
 Plugin 'slim-template/vim-slim'
 Plugin 'tpope/vim-rails'
 Plugin 'pangloss/vim-javascript'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'scrooloose/syntastic'
-Plugin 'suan/vim-instant-markdown'
 Plugin 'fatih/vim-go'
 Plugin 'prettier/vim-prettier'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'Quramy/tsuquyomi'
 
 " Clojure Syntax highlighting, repl, etc
 Plugin 'tpope/vim-fireplace'
@@ -67,14 +68,11 @@ set showmatch
 " Switch syntax highlighting on.
 syntax on
 
-"PRETTIER NEEDS BABYLON
+" PRETTIER NEEDS BABYLON
 let g:prettier#config#parser = 'babylon'
 
 " Enable file type detection and do language-dependent indenting.
 filetype plugin indent on
-
-" NERDTree arrows
-" let g:NERDTreeDirArrowExpandable = '🎑'
 
 " Map all the things
 let mapleader = ','
