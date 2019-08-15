@@ -105,6 +105,9 @@ let NERDTreeShowHidden=1
 " Open vimrc in buffer to edit
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 
+" Formats Hashes/Objects taken from macro, but also got overwritten >.>
+nnoremap <leader>rf $v%lohc<CR><CR><Up><C-r>"<Esc>:s/,/,\r/g<CR>:'[,']norm ==<CR>
+
 " Line numbers
 set number
 
